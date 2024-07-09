@@ -10,7 +10,7 @@ define Package/openwrt-hello
 	SECTION:=base
 	CATEGORY:=Utilities
 	TITLE:=Hello world -prints a hello world message
-	VERSION:=$(PKG_RELEASE)
+	VERSION:=$(PKG_VERSION)
 endef
 
 define Package/openwrt-hello/description
