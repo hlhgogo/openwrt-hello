@@ -30,6 +30,8 @@ Build/Compile = $(Build/Compile/Default)
 
 # 定义hello_world安装什么
 define Package/openwrt-hello/install
+    $(INSTALL_DIR) $(1)/etc/init.d
+	$(INSTALL_DIR) $(1)/usr/bin
 	$(INSTALL_BIN) files/x86-64/openwrt-hello $(1)/usr/bin/openwrt-hello
 endef
 
